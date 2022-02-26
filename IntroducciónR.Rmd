@@ -1,0 +1,41 @@
+---
+title: "IntroducciónR"
+output:
+  html_document:
+    mathjax: default
+    selfcontained: False
+    fig_height: 6
+    fig_width: 8
+    theme: journal
+    highlight: zenburn
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+## CONTENIDOS
+1. Preguntas
+
+* Pregunta 1
+
+* Preugnta 2
+
+* Pregunta 3 
+
+* Pregunta 4
+
+
+## Pregunta 1
+Crear un identificador de nombre "ciudad" y asigne como valor el nombre de alguna ciudad
+
+```{r muestra, echo = TRUE}
+
+ciudad <- "Cuenca"
+print(ciudad)
+
+```
