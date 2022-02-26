@@ -61,3 +61,14 @@ datos <- data.frame(mes = mes, precio = precio, personas = personas, filas = fil
 names(datos)
 print(datos)
 ```
+## Pregunta 4
+Cargue el dataset "DNase" e identifique su estructura. Extraiga (subset) los datos que cumplan con las condiciones de: 
+### P4 1.1
+Cargue el dataset "DNase" e identifique su estructura. Extraiga (subset) los datos que cumplan con las condiciones de: 
+
+```{r include=TRUE}
+database <- DNase
+class(DNase)
+first_filter <- filter(DNase, conc < 0.2 & conc > 0.1)
+print(first_filter)
+```
