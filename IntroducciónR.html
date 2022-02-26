@@ -359,6 +359,33 @@ div.tocify {
 <pre><code>## [1] &quot;Argentina&quot; &quot;Bolivia&quot;   &quot;Chile&quot;     &quot;Colombia&quot;  &quot;Ecuador&quot;   &quot;Perú&quot;     
 ## [7] &quot;Venezuela&quot;</code></pre>
 </div>
+<div id="pregunta-3" class="section level2">
+<h2>Pregunta 3</h2>
+<p>Crear un dataframe con 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter, logico)</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>precio <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">2.37</span>, <span class="fl">1.56</span>, <span class="fl">1.4</span>, <span class="fl">2.96</span>, <span class="fl">2.53</span>, <span class="fl">2.16</span>,</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>          <span class="fl">3.38</span>, <span class="fl">3.62</span>, <span class="fl">4.03</span>, <span class="fl">2.59</span>, <span class="fl">2.15</span>, <span class="fl">1.85</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>personas <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;person&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>filas <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;B1&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>mes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;enero&quot;</span>, <span class="st">&quot;febrero&quot;</span>, <span class="st">&quot;marzo&quot;</span>, <span class="st">&quot;abril&quot;</span>, <span class="st">&quot;mayo&quot;</span>, <span class="st">&quot;junio&quot;</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>         <span class="st">&quot;julio&quot;</span>, <span class="st">&quot;agosto&quot;</span>, <span class="st">&quot;septiembre&quot;</span>, <span class="st">&quot;octubre&quot;</span>, <span class="st">&quot;noviembre&quot;</span>, <span class="st">&quot;diciembre&quot;</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">mes =</span> mes, <span class="at">precio =</span> precio, <span class="at">personas =</span> personas, <span class="at">filas =</span> filas)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(datos)</span></code></pre></div>
+<pre><code>## [1] &quot;mes&quot;      &quot;precio&quot;   &quot;personas&quot; &quot;filas&quot;</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(datos)</span></code></pre></div>
+<pre><code>##           mes precio personas filas
+## 1       enero   2.37  person1   B11
+## 2     febrero   1.56  person2   B12
+## 3       marzo   1.40  person3   B13
+## 4       abril   2.96  person4   B14
+## 5        mayo   2.53  person5   B15
+## 6       junio   2.16  person6   B16
+## 7       julio   3.38  person7   B17
+## 8      agosto   3.62  person8   B18
+## 9  septiembre   4.03  person9   B19
+## 10    octubre   2.59 person10  B110
+## 11  noviembre   2.15 person11  B111
+## 12  diciembre   1.85 person12  B112</code></pre>
+</div>
 
 
 
