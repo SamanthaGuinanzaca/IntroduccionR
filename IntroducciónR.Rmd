@@ -47,3 +47,17 @@ Crear un identificador de nombre "pais_andes" y asigne como valor los nombres de
 pais_andes <- c("Argentina", "Bolivia", "Chile", "Colombia", "Ecuador", "Perú", "Venezuela")
 print(pais_andes)
 ```
+## Pregunta 3
+Crear un dataframe con 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter, logico)
+
+```{r muest, echo = TRUE}
+precio <- c(2.37, 1.56, 1.4, 2.96, 2.53, 2.16,
+          3.38, 3.62, 4.03, 2.59, 2.15, 1.85)
+personas <- paste0("person", 1:12)
+filas <- paste0("B1", 1:12)
+mes <- c("enero", "febrero", "marzo", "abril", "mayo", "junio",
+         "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre")
+datos <- data.frame(mes = mes, precio = precio, personas = personas, filas = filas)
+names(datos)
+print(datos)
+```
